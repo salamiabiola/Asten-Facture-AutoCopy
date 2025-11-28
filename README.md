@@ -1,11 +1,11 @@
-**# ------Asten-Facture-AutoCopy-----**
+**# ----Facture-AutoCopy-----**
 
-Un script Python permettant d’identifier et de récupérer automatiquement les factures non intégrées sur le logiciel ASTEN, à partir d’un fichier Excel consolidé.
+Un script Python permettant d’identifier et de récupérer automatiquement les factures non intégrées sur un logiciel, à partir d’un fichier Excel consolidé.
 Le script recherche ensuite ces factures dans un dossier source (avec sous-dossiers), et copie celles trouvées vers un dossier de sortie pour faciliter leur réintégration.
 
 **# ------Fonctionnalités-----**
 
-✔ Lecture automatique d'un fichier Excel consolidé
+✔ Lecture automatique d'un fichier Excel consolidé</br>
 ✔ Filtrage des factures selon un mois spécifique
 ✔ Recherche des fichiers dans tous les sous-dossiers du backup
 ✔ Copie automatique des factures trouvées vers un dossier défini

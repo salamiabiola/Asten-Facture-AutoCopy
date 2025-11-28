@@ -14,12 +14,11 @@ Le script recherche ensuite ces factures dans un dossier source (avec sous-dossi
 
 **# ------Structure d’utilisation-----**
 
-    ├── VERIFICATION_FACT_ASTEN.xlsx         # Fichier contenant les factures consolidées **à adapter**
-├── Fact-Backup/                         # Dossier source contenant les factures (.txt) qui sont dans les sous-dossiers
-│   ├── prdP2A_XXXX/                     # Les sous-dossiers contenant les factures (.txt) là
-│   ├── prdFactureAvoirP2A_XXXX/         # Les sous-dossiers contenant les factures (.txt) là
-│   └── ...
-└── Fact Non Int Trouvees/               # Destination des factures trouvées **à adapter**
+        - VERIFICATION_FACT_ASTEN.xlsx         # Fichier contenant les factures consolidées **à adapter**
+        - Fact-Backup/                         # Dossier source contenant les factures (.txt) qui sont dans les sous-dossiers
+        - prdP2A_XXXX/                     # Les sous-dossiers contenant les factures (.txt) là
+        - prdFactureAvoirP2A_XXXX/         # Les sous-dossiers contenant les factures (.txt) là
+        - Fact Non Int Trouvees/               # Destination des factures trouvées **à adapter**
 
 
 **# ------Prérequis-----**

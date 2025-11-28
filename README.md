@@ -6,10 +6,10 @@ Le script recherche ensuite ces factures dans un dossier source (avec sous-dossi
 **# ------Fonctionnalités-----**
 
 ✔ Lecture automatique d'un fichier Excel consolidé</br>
-✔ Filtrage des factures selon un mois spécifique
-✔ Recherche des fichiers dans tous les sous-dossiers du backup
-✔ Copie automatique des factures trouvées vers un dossier défini
-✔ Liste des factures introuvables affichée à la fin
+✔ Filtrage des factures selon un mois spécifique</br>
+✔ Recherche des fichiers dans tous les sous-dossiers du backup</br>
+✔ Copie automatique des factures trouvées vers un dossier défini</br>
+✔ Liste des factures introuvables affichée à la fin</br>
 ✔ Réduction du temps de recherche manuelle et d’intégration
 
 **# ------Structure d’utilisation-----**

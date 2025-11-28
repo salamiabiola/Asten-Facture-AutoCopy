@@ -3,7 +3,7 @@
 Un script Python permettant d’identifier et de récupérer automatiquement les factures non intégrées sur le logiciel ASTEN, à partir d’un fichier Excel consolidé.
 Le script recherche ensuite ces factures dans un dossier source (avec sous-dossiers), et copie celles trouvées vers un dossier de sortie pour faciliter leur réintégration.
 
-# ------Fonctionnalités-----
+**# ------Fonctionnalités-----**
 
 ✔ Lecture automatique d'un fichier Excel consolidé
 ✔ Filtrage des factures selon un mois spécifique
@@ -12,7 +12,7 @@ Le script recherche ensuite ces factures dans un dossier source (avec sous-dossi
 ✔ Liste des factures introuvables affichée à la fin
 ✔ Réduction du temps de recherche manuelle et d’intégration
 
-# ------Structure d’utilisation-----
+**# ------Structure d’utilisation-----**
 
 ``````
     ├── VERIFICATION_FACT_ASTEN.xlsx         # Fichier contenant les factures consolidées
@@ -24,7 +24,7 @@ Le script recherche ensuite ces factures dans un dossier source (avec sous-dossi
 
 ``````
 
-# ------Prérequis-----
+**# ------Prérequis-----**
 
 Assurez-vous que Python 3.10+ est installé.
 
@@ -36,7 +36,7 @@ pip install pandas openpyxl
 
 ``````
 
-# ------Exécution du script-----
+**# ------Exécution du script-----**
 
 Modifier les chemins dans le script selon votre environnement :
 
@@ -57,7 +57,7 @@ python copie_factures.py
 
 ``````
 
-# ------Résultats obtenus-----
+**# ------Résultats obtenus-----**
 
 À la fin de l'exécution :
 

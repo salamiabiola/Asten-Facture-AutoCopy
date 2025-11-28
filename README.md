@@ -14,19 +14,13 @@ Le script recherche ensuite ces factures dans un dossier source (avec sous-dossi
 
 **# ------Structure d’utilisation-----**
 
-                # 1
-# ------------------------------
 # CONFIGURATION DES CHEMINS
-# ------------------------------
 
         - VERIFICATION_FACT_ASTEN.xlsx                  # Fichier contenant les factures consolidées **à adapter**
         - Fact-Backup/                                  # Dossier source contenant les factures (.txt) qui sont dans les sous-dossiers
         - Fact Non Int Trouvees/                        # Destination des factures trouvées **à adapter**
 
-                # 2
-# ------------------------------
 # LECTURE EXCEL AVEC BON EN-TETE
-# ------------------------------
 
         - Sheet_name="Fact_Non_Integrées_Sur_ASTEN"     # Nom de la Feuille du fichier Excel consolidé **à adapter**
 

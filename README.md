@@ -14,16 +14,25 @@ Le script recherche ensuite ces factures dans un dossier source (avec sous-dossi
 
 **# ------Structure d’utilisation-----**
 
-        - VERIFICATION_FACT_ASTEN.xlsx         # Fichier contenant les factures consolidées **à adapter**
-        - Fact-Backup/                         # Dossier source contenant les factures (.txt) qui sont dans les sous-dossiers
-        - prdP2A_XXXX/                     # Les sous-dossiers contenant les factures (.txt) là
-        - prdFactureAvoirP2A_XXXX/         # Les sous-dossiers contenant les factures (.txt) là
-        - Fact Non Int Trouvees/               # Destination des factures trouvées **à adapter**
+                # 1
+# ------------------------------
+# CONFIGURATION DES CHEMINS
+# ------------------------------
 
+        - VERIFICATION_FACT_ASTEN.xlsx                  # Fichier contenant les factures consolidées **à adapter**
+        - Fact-Backup/                                  # Dossier source contenant les factures (.txt) qui sont dans les sous-dossiers
+        - Fact Non Int Trouvees/                        # Destination des factures trouvées **à adapter**
+
+                # 2
+# ------------------------------
+# LECTURE EXCEL AVEC BON EN-TETE
+# ------------------------------
+
+        - Sheet_name="Fact_Non_Integrées_Sur_ASTEN"     # Nom de la Feuille du fichier Excel consolidé **à adapter**
 
 **# ------Prérequis-----**
 
-Assurez-vous que Python 3.10+ est installé.Si vous ne savez pas comment l’installer, vous pouvez consulter un tutoriel sur YouTube en recherchant : « comment installer Python sur Windows » dans la barre de recherche.
+Assurez-vous que **Python 3.10+** est installé.Si vous ne savez pas comment l’installer, vous pouvez consulter un tutoriel sur YouTube en recherchant : « comment installer Python sur Windows » dans la barre de recherche.
 
 Installer aussi les dépendances nécessaires pour le script.
 Dans votre Cmd Taper la commande suivante :
@@ -43,6 +52,22 @@ Dans le script, modifier ces chemins selon votre environnement :
 fichier_excel = r"C:\Chemin\VERS\VERIFICATION_FACT_ASTEN.xlsx"
 dossier_source = r"C:\Chemin\VERS\Fact-Backup"
 dossier_destination = r"C:\Chemin\VERS\Fact Non Int Trouvees"
+
+``````
+
+Dans le script, modifier aussi le nom de la feuille Excel Consolidé selon votre environnement :
+**EX :**
+ici sheet_name="Fact_Non_Integrées_Sur_ASTEN" ====> sheet_name="Nom_Feuille"
+
+``````python
+# ------------------------------
+# LECTURE EXCEL AVEC BON EN-TETE
+# ------------------------------
+df = pd.read_excel(
+    fichier_excel, 
+    sheet_name="Fact_Non_Integrées_Sur_ASTEN",
+    header=3
+)
 
 ``````
 

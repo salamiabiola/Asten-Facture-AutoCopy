@@ -20,7 +20,7 @@ Le script recherche ensuite ces factures dans un dossier source (avec sous-dossi
 - Fact-Backup/                                  # Dossier source contenant les factures (.txt) qui sont dans les sous-dossiers
 - Fact Non Int Trouvees/                        # Destination des factures trouvées **à adapter**
 
-### Lecture Excel Avec Bon En-Tete
+### Lecture de la feuille Excel
 
 - Sheet_name="Fact_Non_Integrées_Sur_ASTEN"     # Nom de la Feuille du fichier Excel consolidé **à adapter**
 

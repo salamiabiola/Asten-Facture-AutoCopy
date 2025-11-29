@@ -1,9 +1,9 @@
-## Facture-AutoCopy
+# Facture-AutoCopy
 
 Un script Python permettant d’identifier et de récupérer automatiquement les factures non intégrées sur un logiciel, à partir d’un fichier Excel consolidé.
 Le script recherche ensuite ces factures dans un dossier source (avec sous-dossiers), et copie celles trouvées vers un dossier de sortie pour faciliter leur réintégration.
 
-# Fonctionnalités
+## Fonctionnalités
 
 ✔ Lecture automatique d'un fichier Excel consolidé</br>
 ✔ Filtrage des factures selon un mois spécifique</br>
@@ -14,13 +14,13 @@ Le script recherche ensuite ces factures dans un dossier source (avec sous-dossi
 
 ## STRUCTURE D'UTILISATION
 
-# Configuration Des Chemins
+### Configuration Des Chemins
 
 - VERIFICATION_FACT_ASTEN.xlsx                  # Fichier contenant les factures consolidées **à adapter**
 - Fact-Backup/                                  # Dossier source contenant les factures (.txt) qui sont dans les sous-dossiers
 - Fact Non Int Trouvees/                        # Destination des factures trouvées **à adapter**
 
-# Lecture Excel Avec Bon En-Tete
+### Lecture Excel Avec Bon En-Tete
 
 - Sheet_name="Fact_Non_Integrées_Sur_ASTEN"     # Nom de la Feuille du fichier Excel consolidé **à adapter**
 
@@ -35,7 +35,7 @@ Dans votre Cmd Taper la commande suivante :
 pip install pandas openpyxl
 
 ``````
-# Exécution du script
+## Exécution du script
 
 Dans le script, modifier ces chemins selon votre environnement :
 ``````python
@@ -45,7 +45,7 @@ dossier_source = r"C:\Chemin\VERS\Fact-Backup"
 dossier_destination = r"C:\Chemin\VERS\Fact Non Int Trouvees"
 ``````
 Dans le script, modifier aussi le nom de la feuille Excel Consolidé selon votre environnement :
-# EX :
+### EX :
 
 ici sheet_name="Fact_Non_Integrées_Sur_ASTEN" ====> sheet_name="Nom_Feuille"
 ``````python
@@ -59,7 +59,7 @@ df = pd.read_excel(
 )
 ``````
 Dans le script, modifier aussi la date des factures a récuperer selon votre environnement :
-# EX :
+### EX :
 ici ".dt.month == 10"(OCTOBRE) ====> ".dt.month == 11"(NOVEMBRE)
 ``````python
 # ------------------------------

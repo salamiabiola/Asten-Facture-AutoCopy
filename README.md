@@ -50,24 +50,13 @@ Dans le script, modifier aussi le nom de la feuille Excel Consolidé selon votre
 ici sheet_name="Fact_Non_Integrées_Sur_ASTEN" ====> sheet_name="Nom_Feuille"
 ``````python
 # ------------------------------
-# LECTURE EXCEL AVEC BON EN-TETE
+# LECTURE DE LA FEUILLE EXCEL
 # ------------------------------
 df = pd.read_excel(
     fichier_excel, 
     sheet_name="Fact_Non_Integrées_Sur_ASTEN",
     header=3
 )
-``````
-Dans le script, modifier aussi la date des factures a récuperer selon votre environnement :
-### EX :
-ici ".dt.month == 10"(OCTOBRE) ====> ".dt.month == 11"(NOVEMBRE)
-``````python
-# ------------------------------
-# FILTRER LES FACTURES DE NOVEMBRE
-# ------------------------------
-
-df["Date.Validation Backup"] = pd.to_datetime(df["Date.Validation Backup"], errors="coerce")
-df_novembre = df[df["Date.Validation Backup"].dt.month == 10]
 ``````
 Puis lancer dans le terminal qui est dans Visual studio :
 ``````bash
@@ -77,5 +66,5 @@ python copie_factures.py
 
 À la fin de l'exécution :
 
-Les factures trouvées sont copiées automatiquement vers le dossier Fact Non Int Trouvees(Dossier Destination).
+Les factures trouvées sont copiées automatiquement vers le dossier Fact Non Int Trouvees(Dossier Destination).</br>
 Une liste des factures introuvables est affichée dans le terminal de visual studio pour suivi manuel.
